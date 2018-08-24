@@ -11,10 +11,10 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a class="site-navigation-current">Информация</a></li>
+          <li><a href="info.html">Информация</a></li>
           <li><a href="foto-video.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -85,7 +85,29 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="search-hotel-button">Поиск гостиницы в Седоне</button>
-        <!-- форма -->
+        <form class="search-hotel-form" method="POST" action="https://echo.htmlacademy.ru">
+          <p class="search-hotel-item">
+            <label for="start">Дата заезда:</label>
+            <input type="date" name="trip" id="start" placeholder="24.04.2017 ">
+          </p>
+          <p class="search-hotel-item">
+            <label for="end">Дата выезда:</label>
+            <input type="date" name="trip" id="end" placeholder="4.07.2017">
+          </p>
+          <p class="search-hotel-item">
+            Взрослые:
+            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+            <input type="number" min="0" max="10" step="1" value="1" readonly>
+            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+          </p>
+          <p class="search-hotel-item">
+            Дети:
+            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+            <input type="number" min="0" max="10" step="1" value="1" readonly>
+            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+          </p>
+          <button class="button-main" type="submit">Найти</button>
+        </form>
       </section>
       <div class="map">
         <img src="img/map.jpg" width="1718" height="748" alt="City map of Sedon">
@@ -97,9 +119,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
+          <li><a class="social-button" href="#" aria-label="Facebook"></a></li>
+          <li><a class="social-button" href="#" aria-label="Youtube"></a></li>
         </ul>
       </div>
       <div class="footer-copyright">
