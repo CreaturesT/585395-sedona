@@ -19,24 +19,65 @@
     </nav>
   </header>
   <main>
-    <section class="search">
       <h1 class="visually-hidden">Поиск гостиниц</h1>
-      <!-- form -->
+    <section class="search">
+      <h2 class="visually-hidden">Фильтр отелей</h2>
+      <form class="filter">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <label for="filter-wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <input type="range">
+          <button class="button-search" type="submit">Показать</button>
+        </fieldset>
+      </form>
     </section>
     <section class="result">
       <h3>Найдено: 3</h3>
       <ul class="result-list">
-        <li class="result-item">Сортировка:</li>
-        <li class="result-current"><a href="#">По цене</a></li>
-        <li class="result-item"><a href="#">По типу</a></li>
-        <li class="result-item"><a href="#">По рейтингу</a></li>
+        <li class="result-title">Сортировка:</li>
+        <li class="result-item result-item-current"><a href="#">По цене</a></li>
+        <li class="result-item result-item-current"><a href="#">По типу</a></li>
+        <li class="result-item result-item-current"><a href="#">По рейтингу</a></li>
       </ul>
     </section>
     <section class="found-hotels">
       <ul class="found-hotels-list">
         <li class="found-hotels-item">
           <div class="found-hotels-img">
-            <a href="catalog-hotels.html">
+            <a href="catalog-hotels.html" aria-label="Гостиница amara resort & spa">
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
             </a>
           </div>
@@ -47,8 +88,8 @@
             <span class="value-hotels">Гостиница от 4000 р.</span>
           </div>
           <div class="found-hotels-button">
-            <a class="button1" href="catalog-hotels.html">Подробнее</a>
-            <a class="button2" href="#">Забронировать</a>
+            <a class="button-more" href="catalog-hotels.html">Подробнее</a>
+            <a class="button-to-book" href="#">Забронировать</a>
           </div>
           <div class="found-hotels-rating">
             <span class="rating">Рейтинг: 8,5</span>
@@ -56,7 +97,7 @@
         </li>
         <li class="found-hotels-item">
           <div class="found-hotels-img">
-            <a href="catalog-hotels.html">
+            <a href="catalog-hotels.html" aria-label="Мотель desert quail inn">
               <img src="img/desert-quail.jpg" width="135" height="90" alt="Desert quail inn">
             </a>
           </div>
@@ -67,8 +108,8 @@
             <span class="value-hotels">Мотель от 3000 р.</span>
           </div>
           <div class="found-hotels-button">
-            <a class="button1" href="catalog-hotels.html">Подробнее</a>
-            <a class="button2" href="#">Забронировать</a>
+            <a class="button-more" href="catalog-hotels.html">Подробнее</a>
+            <a class="button-to-book" href="#">Забронировать</a>
           </div>
           <div class="found-hotels-rating">
             <span class="rating">Рейтинг: 8,9</span>
@@ -76,7 +117,7 @@
         </li>
         <li class="found-hotels-item">
           <div class="found-hotels-img">
-            <a href="catalog-hotels.html">
+            <a href="catalog-hotels.html" aria-label="Апартаменты at poco diablo">
               <img src="img/at-poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
             </a>
           </div>
@@ -87,8 +128,8 @@
             <span class="value-hotels">Апартаменты от 2000 р.</span>
           </div>
           <div class="found-hotels-button">
-            <a class="button1" href="catalog-hotels.html">Подробнее</a>
-            <a class="button2" href="#">Забронировать</a>
+            <a class="button-more" href="catalog-hotels.html">Подробнее</a>
+            <a class="button-to-book" href="#">Забронировать</a>
           </div>
           <div class="found-hotels-rating">
             <span class="rating">Рейтинг: 9,2</span>
@@ -103,14 +144,14 @@
     </p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
+        <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
+        <li><a class="social-button" href="#" aria-label="Facebook"></a></li>
+        <li><a class="social-button" href="#" aria-label="Youtube"></a></li>
       </ul>
     </div>
     <div class="footer-copyright">
       <span class="copyright">Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">
         <img src="img/logo_htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       </a>
     </div>
