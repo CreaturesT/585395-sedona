@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск жилья в городе Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -40,15 +43,15 @@
           </li>
           <li class="features-item">
             <div class="features-block-first">
-              <h4>Жилье</h4>
+              <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="features-block-first">
-              <h4>Еда</h4>
+              <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бергер, вы не разочаруетесь!</p>
             </div>
             <div class="features-block-first">
-              <h4>Сувениры</h4>
+              <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </div>
           </li>
@@ -84,7 +87,7 @@
       <section class="search-hotel">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="search-hotel-button">Поиск гостиницы в Седоне</button>
+        <button class="button search-hotel-button" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-hotel-form" method="POST" action="https://echo.htmlacademy.ru">
           <p class="search-hotel-item">
             <label for="start">Дата заезда:</label>
@@ -96,17 +99,17 @@
           </p>
           <p class="search-hotel-item">
             Взрослые:
-            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+            <button class="minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
             <input type="number" min="0" max="10" step="1" value="1" readonly tabindex="-1">
-            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            <button class="plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
           </p>
           <p class="search-hotel-item">
             Дети:
-            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+            <button class="minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
             <input type="number" min="0" max="10" step="1" value="1" readonly tabindex="-1">
-            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            <button class="plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
           </p>
-          <button class="button-main" type="submit">Найти</button>
+          <button class="button button-main" type="submit">Найти</button>
         </form>
       </section>
       <div class="map">
@@ -126,8 +129,8 @@
       </div>
       <div class="footer-copyright">
         <span class="copyright">Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo_htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+        <a class="button-footer" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
         </a>
       </div>
     </footer>
