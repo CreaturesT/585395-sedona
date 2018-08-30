@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Поиск гостиницы в городе Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -60,7 +63,7 @@
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <input type="range">
-          <button class="button-search" type="submit">Показать</button>
+          <button class="button button-search" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -68,9 +71,9 @@
       <h3>Найдено: 3</h3>
       <ul class="result-list">
         <li class="result-title">Сортировка:</li>
-        <li class="result-item result-item-current"><a href="#">По цене</a></li>
-        <li class="result-item result-item-current"><a href="#">По типу</a></li>
-        <li class="result-item result-item-current"><a href="#">По рейтингу</a></li>
+        <li><a class="result-item-current" href="#">По цене</a></li>
+        <li><a class="result-item" href="#">По типу</a></li>
+        <li><a class="result-item" href="#">По рейтингу</a></li>
       </ul>
     </section>
     <section class="found-hotels">
@@ -82,14 +85,14 @@
             </a>
           </div>
           <div class="found-hotels-title">
-            <a href="catalog-hotels.html">
+            <a class="found-hotels-title-link" href="catalog-hotels.html">
               Amara resort & spa
             </a>
             <span class="value-hotels">Гостиница от 4000 р.</span>
           </div>
           <div class="found-hotels-button">
-            <a class="button-more" href="catalog-hotels.html">Подробнее</a>
-            <a class="button-to-book" href="#">Забронировать</a>
+            <a class="button button-more" href="catalog-hotels.html">Подробнее</a>
+            <a class="button button-to-book" href="#">Забронировать</a>
           </div>
           <div class="found-hotels-rating">
             <span class="rating">Рейтинг: 8,5</span>
@@ -102,14 +105,14 @@
             </a>
           </div>
           <div class="found-hotels-title">
-            <a href="catalog-hotels.html">
+            <a class="found-hotels-title-link" href="catalog-hotels.html">
               Desert quail inn
             </a>
             <span class="value-hotels">Мотель от 3000 р.</span>
           </div>
           <div class="found-hotels-button">
-            <a class="button-more" href="catalog-hotels.html">Подробнее</a>
-            <a class="button-to-book" href="#">Забронировать</a>
+            <a class="button button-more" href="catalog-hotels.html">Подробнее</a>
+            <a class="button button-to-book" href="#">Забронировать</a>
           </div>
           <div class="found-hotels-rating">
             <span class="rating">Рейтинг: 8,9</span>
@@ -122,14 +125,14 @@
             </a>
           </div>
           <div class="found-hotels-title">
-            <a href="catalog-hotels.html">
+            <a class="found-hotels-title-link" href="catalog-hotels.html">
               Villas at poco diablo
             </a>
             <span class="value-hotels">Апартаменты от 2000 р.</span>
           </div>
           <div class="found-hotels-button">
-            <a class="button-more" href="catalog-hotels.html">Подробнее</a>
-            <a class="button-to-book" href="#">Забронировать</a>
+            <a class="button button-more" href="catalog-hotels.html">Подробнее</a>
+            <a class="button button-to-book" href="#">Забронировать</a>
           </div>
           <div class="found-hotels-rating">
             <span class="rating">Рейтинг: 9,2</span>
@@ -151,8 +154,8 @@
     </div>
     <div class="footer-copyright">
       <span class="copyright">Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">
-        <img src="img/logo_htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+      <a class="button-footer" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       </a>
     </div>
   </footer>
