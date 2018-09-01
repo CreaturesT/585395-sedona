@@ -10,7 +10,7 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
-    background-image: url("img/background.jpg");
+    background-image: url("../img/background-photo.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -79,20 +79,20 @@ a {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation-link:active {
   color: #cecece;
 }
 
-a.site-navigation-current{
+.site-navigation-current{
   color: #827167;
 }
 
@@ -119,9 +119,13 @@ a.site-navigation-current{
   color: #6a6a6a;
 }
 
+.inner-page {
+  background-image: none;
+}
+
 .search {
-  background-color: #dfbdae;
-  background-image: url("img/filter-background.jpg");
+  background-color: #fdfdfd;
+  background-image: url("../img/filter-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
