@@ -429,4 +429,32 @@ body {
   text-align: center;
 }
 
+.main-footer {
+  background-color: #ffffff;
+  opacity: 50%;
+}
 
+.main-footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-social {
+  margin: 0;
+}
+
+.hashtag {
+  width: 240px;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.footer-social {
+  width: 400px;
+}
+
+.footer-copyright {
+  width: 240px;
+  margin: 0;
+  padding-top: 40px;
+}
