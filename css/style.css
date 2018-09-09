@@ -406,14 +406,12 @@ body {
 }
 
 .features-cell {
-  flex-grow: 1;
-  /* width: 400px;*/
+  width: 400px;
   height: 256px;
 }
 
 .features-img {
-  flex-grow: 2;
-   /* width: 800px; */
+   width: 800px;
   height: 256px;
 }
 
