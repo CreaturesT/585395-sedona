@@ -1,4 +1,5 @@
 body {
+  min-width: 1200;
   margin: 0;
   padding: 0;
 
@@ -8,6 +9,11 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -23,18 +29,20 @@ body {
   background-image: url("../img/polygon-background.jpg");
   background-position: 0 auto;
   background-repeat: no-repeat;
-  marign-left: 15px;
 }
 
 .container-img {
   text-align: center;
+  width: 1200px;
 }
 
 .description {
-  width: 100%;
-  height: 216px;
+  width: 576px;
+  min-height: 200px;
   text-align: center;
   padding-top: 60px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 a {
@@ -44,9 +52,14 @@ a {
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
 }
 
 .button {
@@ -337,7 +350,6 @@ a {
 .main-footer {
   color: #000000;
   background-color: #ffffff;
-  opacity: 20%;
 }
 
 .hashtag a {
@@ -360,11 +372,13 @@ a {
 }
 
 .footer-copyright {
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.button-footer img:hover{
-  background-color: #81b3d2;
+.copyright {
+  align-self: center;
+  padding-right: 5px;
 }
 
 /* Сеточные стили */
@@ -388,12 +402,18 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: #ffffff;
+  width: 1200px;
 }
 
 .main-header-logo {
   width: 140px;
   height: 72px;
-  order: 2;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .description {
@@ -462,6 +482,7 @@ body {
 .main-footer .container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .footer-social {
@@ -532,3 +553,125 @@ body {
   justify-content: space-around;
 }
 
+
+
+.features-block-first:nth-child(1)::before {
+  content: "";
+  position: relative;
+  top: -10px;
+  left: 0px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-block-first:nth-child(2)::before {
+  content: "";
+  position: relative;
+  top: -10px;
+  left: 0px;
+
+  width: 74px;
+  height: 70px;
+
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-block-first:nth-child(3)::before {
+  content: "";
+  position: relative;
+  top: -10px;
+  left: 0px;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.search-hotel-button {
+  font-size: 21px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 30px 130px;
+}
+
+.search-hotel-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 576px;
+}
+
+.search-hotel-item {
+  width: 100%;
+}
+
+.search-hotel-item label {
+  display: block;
+}
+
+.search-hotel-item {
+  box-sizing: border-box;
+  width: 346px;
+}
+
+.button-main {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 190px;
+  padding-right: 190px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: #88b6d1;
+}
+
+.button-footer:hover path,
+.button-footer:focus path {
+  fill: #81b3d2;
+}
+
+.button-footer:active path {
+  fill: #bdbbbc;
+}
