@@ -21,8 +21,9 @@ body {
   height: 564px;
   background-color: #ffffff;
   background-image: url("../img/polygon-background.jpg");
-  background-position: 0 0;
+  background-position: 0 auto;
   background-repeat: no-repeat;
+  marign-left: 15px;
 }
 
 .container-img {
@@ -386,12 +387,18 @@ body {
 .main-navigation {
   display: flex;
   justify-content: space-around;
+  background-color: #ffffff;
 }
 
 .main-header-logo {
   width: 140px;
   height: 72px;
   order: 2;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
 }
 
 .features-item {
@@ -458,3 +465,52 @@ body {
   margin: 0;
   padding-top: 40px;
 }
+
+.result {
+  display: flex;
+}
+
+.found-hotels-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.found-hotels-item {
+  display: flex;
+}
+
+.found-hotels-img,
+.found-hotels-title {
+  align-self: flex-start;
+}
+
+.found-hotels-rating {
+  align-self: flex-end;
+}
+
+.found-hotels-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.found-hotels-img {
+  padding-right: 30px;
+}
+
+.found-hotels-title {
+  padding-bottom: 15px;
+}
+
+.value-hotels {
+  padding-bottom: 15px;
+}
+
+.button-more {
+  padding-right: 5px;
+}
+
+.inner-page .main-footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+
