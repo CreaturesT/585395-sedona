@@ -37,9 +37,9 @@ img {
 }
 
 .container-welcome::after {
-  content: url("../img/polygon.png");
+  content: url("../img/polygon.svg");
   padding: 0;
-  padding-top: 64px;
+  padding-top: 65px;
   display: block;
 }
 
