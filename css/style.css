@@ -217,6 +217,9 @@ a {
 .found-hotels {
   box-sizing: border-box;
   padding: 0 71px;
+  background-image: url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 2px, 0 153px, 0 304px, 0 455px;
 }
 
 .found-hotels-title {
@@ -328,12 +331,12 @@ a {
 .search-hotel-item-container {
   display: flex;
   padding-bottom: 54px;
-  padding-left: 27px;
+  padding-left: 47px;
 }
 
 .search-hotel-item {
   position: relative;
-  padding: 0;
+  padding-bottom: 30px;
   padding-left: 45px;
   margin: 0;
   width: 462px;
@@ -356,27 +359,17 @@ a {
 .calendar:active {
   fill: #81b3d2;
 }
-
+/*
 .minus {
   width: 38px;
   height: 38px;
   font-size: 0;
   background-color: #f2f2f2;
   border: 0;
-}
-
-
-.search-hotel-item:nth-child(1) {
-  padding-top: 55px;
-  padding-bottom: 30px;
-}
-
-.search-hotel-item:nth-child(2) {
-  padding-bottom: 30px;
-}
+  padding: 0;
+} */
 
 .search-hotel-item-second {
-  padding: 0;
   margin: 0;
   width: 230px;
 }
@@ -411,12 +404,10 @@ a {
 
 .button-main {
   display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 190px;
-  padding-right: 190px;
-  margin-left: 60px;
-  margin-right: 60px;
+  width: 458px;
+  height: 58px;
+  padding: 0;
+  margin: 0 50px;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
@@ -448,6 +439,17 @@ a {
   padding-right: 5px;
 }
 
+.modal {
+  position: fixed;
+  top: 251px;
+  left: 50%;
+  width: 568px;
+  padding: 55px;
+  margin-left: -339px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
 /* Сеточные стили */
 
 
@@ -472,9 +474,11 @@ a {
   width: 140px;
   height: 72px;
   position: absolute;
-  right: 44%;
+  right: 50%;
   bottom: -31px;
-  padding-right: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: -90px;
 }
 
 .site-navigation-item {
@@ -566,11 +570,14 @@ a {
 .footer-social {
   text-align: center;
   margin: 0;
+  padding-top: 13px;
+  padding-left: 40px;
 }
 
 .hashtag {
   margin: 0;
   padding-left: 62px;
+  padding-top: 30px;
 }
 
 .footer-copyright {
@@ -578,7 +585,7 @@ a {
   justify-content: flex-start;
   width: 240px;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   align-content: center;
   align-items: center;
 }
@@ -594,8 +601,8 @@ a {
 
 .found-hotels-item {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .found-hotels-img {
@@ -612,6 +619,15 @@ a {
   background-image: url("../img/star.svg");
   background-repeat: repeat-x;
   background-position: 10px 0px;
+}
+
+.rating {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .value-hotels {
@@ -681,6 +697,8 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social ul {
@@ -798,6 +816,8 @@ a {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 5px;
+  margin-right: 6px;
 }
 
 .result h3 {
@@ -805,7 +825,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 30px;
 }
 
@@ -821,7 +841,8 @@ a {
 
 .result-item {
   padding: 0;
-  padding-left: 40px;
+  padding-left: 33px;
+  padding-top: 5px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -829,7 +850,8 @@ a {
 
 .result-item-button {
   margin-left: auto;
-  margin-top: 38px;
+  margin-top: 34px;
+  padding-right: 1px;
 }
 
 .button-up path {
@@ -859,7 +881,7 @@ a {
 }
 
 .button-down {
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .button-down-current path {
