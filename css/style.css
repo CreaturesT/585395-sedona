@@ -84,7 +84,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  padding: 5px 15px;
+  padding: 5px 17px;
 }
 
 .button-more:hover,
@@ -103,7 +103,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  padding: 5px 15px;
+  padding: 5px 18px;
 }
 
 .button-to-book:hover,
@@ -219,7 +219,7 @@ a {
   padding: 0 71px;
   background-image: url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 0 2px, 0 153px, 0 304px, 0 455px;
+  background-position: 0 0, 0 150px, 0 301px, 0 452px;
 }
 
 .found-hotels-title {
@@ -314,7 +314,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   display: inline-block;
-  padding: 30px 130px;
+  padding: 32px 130px;
   color: #ffffff;
   background-color: #766357;
   border: none;
@@ -359,6 +359,7 @@ a {
 .calendar:active {
   fill: #81b3d2;
 }
+
 /*
 .minus {
   width: 38px;
@@ -405,8 +406,9 @@ a {
 .button-main {
   display: inline-block;
   width: 458px;
-  height: 58px;
   padding: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
   margin: 0 50px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -448,6 +450,11 @@ a {
   margin-left: -339px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  display: none;
+}
+
+.modal-show {
+  display: flex;
 }
 
 /* Сеточные стили */
@@ -601,7 +608,7 @@ a {
 
 .found-hotels-item {
   display: flex;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 25px;
 }
 
@@ -633,7 +640,7 @@ a {
 .value-hotels {
   margin: 0;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 12px;
   font-size: 14px;
   line-height: 21px;
 }
