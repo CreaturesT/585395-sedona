@@ -8,7 +8,6 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-
 }
 
 img {
@@ -20,6 +19,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 
 }
 
@@ -286,6 +286,14 @@ a {
   margin-bottom: 13px;
 }
 
+.features-cell-1 {
+  padding: 0 92px;
+}
+
+.features-cell-2 {
+  padding: 0 77px;
+}
+
 .features-cell-p {
   padding: 0 55px;
 }
@@ -473,7 +481,7 @@ a {
   align-items: center;
   align-content: center;
   padding-bottom: 5px;
-  padding-right: 5px;
+  padding-right: 9px;
 }
 
 .modal {
@@ -623,6 +631,7 @@ a {
   align-items: center;
   align-content: center;
   color: #000000;
+  box-shadow: none;
 }
 
 .footer-social-list {
@@ -633,12 +642,12 @@ a {
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  padding-left: 30px;
+  padding-left: 37px;
 }
 
 .hashtag {
   margin: 0;
-  padding-left: 9px;
+  padding-left: 15px;
   padding-bottom: 3px;
 }
 
@@ -648,6 +657,7 @@ a {
   align-items: center;
   padding: 0;
   padding-top: 3px;
+  padding-left: 8px;
 }
 
 .found-hotels-list {
