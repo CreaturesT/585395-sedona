@@ -18,8 +18,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 
 }
 
@@ -514,8 +513,7 @@ a {
 
 .site-navigation {
   display: flex;
-  margin: 15px 0;
-  padding: 0 70px;
+  padding: 15px 70px;
   list-style: none;
   box-sizing: border-box;
 }
