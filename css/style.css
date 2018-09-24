@@ -25,7 +25,7 @@ img {
 
 .container-welcome {
   width: 1200px;
-  height: 506px;
+  height: 508px;
   background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
   background-position: 1px -55px;
@@ -36,13 +36,14 @@ img {
 .container-img {
   text-align: center;
   padding-top: 76px;
+  padding-left: 3px;
   margin: 0;
 }
 
 .container-welcome::after {
   content: url("../img/polygon.svg");
   padding: 0;
-  padding-top: 16px;
+  padding-top: 18px;
   display: block;
 }
 
@@ -88,7 +89,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  padding: 5px 17px;
+  padding: 5px 16px;
 }
 
 .button-more:hover,
@@ -220,11 +221,13 @@ a {
   background-image: url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0 0, 0 150px, 0 301px, 0 452px;
+  background-color: #ffffff;
 }
 
 .found-hotels-title {
   font-size: 21px;
   line-height: 26px;
+  margin-top: 2px;
 }
 
 .found-hotels-title-link {
@@ -246,15 +249,17 @@ a {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
-  margin-left: 6px;
+  margin-left: 5px;
   margin-top: 2px;
+  margin-right: 1px;
+  padding: 0 1px;
 }
 
 .description p {
   line-height: 26px;
   margin-top: 27px;
   margin-bottom: 0;
-  margin-left: 2px;
+  margin-left: 1px;
 }
 
 .features p {
@@ -272,14 +277,13 @@ a {
   line-height: 21px;
   font-weight: 700;
   padding: 0 92px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 
 .features-cell p {
-  margin: 0;
-  margin-bottom: 10px;
-  margin-top: 11px;
+  margin: 11px 0;
+
 }
 
 .features-cell h3 {
@@ -287,11 +291,13 @@ a {
   margin-bottom: 13px;
 }
 
-.features-cell-1 {
+.features-cell .features-cell-1 {
+  margin-top: -1px;
   padding: 0 92px;
 }
 
-.features-cell-2 {
+.features-cell .features-cell-2 {
+  margin-top: -6px;
   padding: 0 77px;
 }
 
@@ -304,6 +310,7 @@ a {
   margin: 0;
   margin-top: 4px;
   margin-bottom: 83px;
+  margin-left: 1px;
 }
 
 .features-block-second-p {
@@ -317,7 +324,7 @@ a {
   margin: 0;
   margin-left: 3px;
   margin-right: 4px;
-  margin-top: 21px;
+  margin-top: 23px;
   padding: 0 25px;
 }
 
@@ -330,17 +337,22 @@ a {
   background-color: #ffffff;
 }
 
+.search-hotel-p {
+  margin-bottom: 48px;
+  margin-top: 42px;
+}
+
 .search-hotel h2 {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-top: 48px;
-  margin-bottom: 10px;
+  margin-top: 52px;
+  margin-bottom: -18px;
 }
 
 .search-hotel p {
   line-height: 24px;
-  margin-bottom: 47px;
+  margin: 0;
 }
 
 .search-hotel-button {
@@ -516,7 +528,7 @@ a {
 .site-navigation {
   display: flex;
   margin: 0;
-  padding: 15px 70px;
+  padding: 15px 72px;
   list-style: none;
   box-sizing: border-box;
 }
@@ -541,6 +553,14 @@ a {
 .site-navigation-item:nth-child(3),
 .site-navigation-item:nth-child(4) {
   text-align: right;
+}
+
+.site-navigation-item:nth-child(2) {
+  padding-right: 43px;
+}
+
+.site-navigation-item:nth-child(3) {
+  padding-left: 43px;
 }
 
 .features-list {
@@ -590,8 +610,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 26px 0;
-  padding-left: 45px;
+  padding: 27px 0;
+  padding-left: 44px;
   padding-right: 43px;
   color: #000000;
 
@@ -600,8 +620,8 @@ a {
 
 .features-block-second-span {
   margin: 0;
-  margin-right: 1px;
-  margin-top: 4px;
+  margin-right: 2px;
+  margin-top: 2px;
 }
 
 .search-hotel {
@@ -622,7 +642,7 @@ a {
 .main-footer {
   position: relative;
   padding: 35px 0;
-  margin-top: -126px;
+  margin-top: -122px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -633,6 +653,7 @@ a {
   align-content: center;
   color: #000000;
   box-shadow: none;
+  padding-left: 9px;
 }
 
 .footer-social-list {
@@ -674,11 +695,12 @@ a {
   display: flex;
   padding-top: 23px;
   padding-bottom: 25px;
+  padding-left: 1px;
 }
 
 .found-hotels-img {
   align-self: flex-start;
-  padding-right: 30px;
+  padding-right: 31px;
   padding-top: 7px;
 }
 
@@ -713,15 +735,15 @@ a {
 
 .value-hotels {
   margin: 0;
-  padding-bottom: 13px;
-  padding-top: 9px;
+  padding-bottom: 14px;
+  padding-top: 7px;
   font-size: 14px;
   line-height: 21px;
 }
 
 .hotel-type {
   display: inline-block;
-  min-width: 113px;
+  min-width: 111px;
 }
 
 .features-block-first:nth-child(1)::before {
@@ -757,7 +779,7 @@ a {
 .features-block-first:nth-child(3)::before {
   content: "";
   position: relative;
-  top: -10px;
+  top: -8px;
   left: 0px;
 
   width: 64px;
@@ -895,6 +917,7 @@ a {
 .result {
   display: flex;
   padding: 0 71px;
+  background-color: #ffffff;
 }
 
 .result-title {
@@ -910,7 +933,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 32px;
+  margin-top: 31px;
   margin-bottom: 30px;
 }
 
