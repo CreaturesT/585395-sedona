@@ -224,10 +224,7 @@ a {
 .found-hotels {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 71px;
-  background-image: url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png"), url("../img/polygon1.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, 0 150px, 0 301px, 0 452px;
+  padding: 0;
   background-color: #ffffff;
 }
 
@@ -289,8 +286,7 @@ a {
 
 
 .features-cell p {
-  margin: 11px 0;
-
+  margin-top: 23px;
 }
 
 .features-cell h3 {
@@ -299,12 +295,12 @@ a {
 }
 
 .features-cell .features-cell-1 {
-  margin-top: -1px;
+  margin-top: -5px;
   padding: 0 92px;
 }
 
 .features-cell .features-cell-2 {
-  margin-top: -6px;
+  margin-top: -7px;
   padding: 0 77px;
 }
 
@@ -316,22 +312,22 @@ a {
   padding: 0 47px;
   margin: 0;
   margin-top: 4px;
-  margin-bottom: 83px;
+  margin-bottom: 11px;
   margin-left: 1px;
 }
 
 .features-block-second-p {
   padding: 0 25px;
   margin: 0;
-  margin-top: 21px;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 31px;
 }
 
 .features-block-second-p1 {
   margin: 0;
   margin-left: 3px;
-  margin-right: 4px;
-  margin-top: 23px;
+  margin-right: 1px;
+  margin-top: 24px;
   padding: 0 25px;
 }
 
@@ -511,13 +507,14 @@ a {
 }
 
 .hashtag {
+  display: inline-block;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   margin: 0;
-  padding-left: 15px;
-  padding-bottom: 3px;
+  width: 33.33%;
 }
 
 .copyright {
@@ -526,8 +523,9 @@ a {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   padding-right: 8px;
+  margin-left: 4px;
 }
 
 .modal {
@@ -597,11 +595,11 @@ a {
 }
 
 .site-navigation-item:nth-child(2) {
-  padding-right: 43px;
+  margin-right: 43px;
 }
 
 .site-navigation-item:nth-child(3) {
-  padding-left: 43px;
+  margin-left: 43px;
 }
 
 .features-list {
@@ -619,19 +617,9 @@ a {
 }
 
 .features-cell {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0;
+  padding-top: 54px;
+  padding-bottom: 20px;
   width: 400px;
   color: #ffffff;
 
@@ -641,6 +629,7 @@ a {
 .features-img {
   width: 800px;
   height: 256px;
+  overflow: hidden;
 }
 
 .features-img-jpg {
@@ -648,24 +637,17 @@ a {
 }
 
 .features-block-first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+  padding: 0;
+  padding-top: 141px;
+  padding-bottom: 72px;
   width: 400px;
-  /* min-height: 330px; */
   background-color: #ffffff;
 }
 
+.features-block-first .features-block-first-h3 {
+  margin: 23px;
+}
 
 .features-block-second {
   display: -webkit-box;
@@ -711,7 +693,7 @@ a {
 .inner-page .main-footer {
   position: static;
   margin: 0;
-  padding: 35px 0;
+  padding: 36px 0;
 }
 
 .main-footer {
@@ -735,7 +717,6 @@ a {
   color: #000000;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding-left: 8px;
 }
 
 .footer-social-list {
@@ -746,14 +727,17 @@ a {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 150px;
+          justify-content: center;
+  width: 33.33%;
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-left: 37px;
 }
 
+.footer-social-item {
+  margin: 0 3px;
+
+}
 
 .footer-copyright {
   display: -webkit-box;
@@ -764,9 +748,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
-  padding-top: 3px;
-  padding-left: 9px;
+  width: 33.33%;
 }
 
 .found-hotels-list {
@@ -782,16 +768,18 @@ a {
           justify-content: flex-start;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 71px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .found-hotels-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 23px;
+  padding-top: 22px;
   padding-bottom: 25px;
   padding-left: 1px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .found-hotels-img {
@@ -850,9 +838,9 @@ a {
 
 .features-block-first:nth-child(1)::before {
   content: "";
-  position: relative;
-  top: -10px;
-  left: 0px;
+  position: absolute;
+  top: -8px;
+  left: 164px;
 
   width: 75px;
   height: 72px;
@@ -865,9 +853,9 @@ a {
 
 .features-block-first:nth-child(2)::before {
   content: "";
-  position: relative;
-  top: -10px;
-  left: 0px;
+  position: absolute;
+  top: -9px;
+  left: 164px;
 
   width: 74px;
   height: 70px;
@@ -880,9 +868,9 @@ a {
 
 .features-block-first:nth-child(3)::before {
   content: "";
-  position: relative;
+  position: absolute;
   top: -8px;
-  left: 0px;
+  left: 169px;
 
   width: 64px;
   height: 76px;
@@ -1012,20 +1000,20 @@ a {
   cursor: pointer;
 }
 
-.filter-option input[type="checkbox"] + .checkbox-indicator {
+.filter-option input[type="checkbox"] + .checkbox-indicator::before {
   position: absolute;
   top: 0;
   left: 0;
   content: url("../img/checkbox-off.svg");
 }
 
-.filter-option input[type="checkbox"]:focus + .checkbox-indicator {
+.filter-option input[type="checkbox"]:focus + .checkbox-indicator::before {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter-option input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1189,6 +1177,7 @@ a {
 
 .price-controls input {
   width: 50px;
+  height: 30px;
   margin: 0;
 
   color: inherit;
