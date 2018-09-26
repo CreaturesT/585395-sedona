@@ -27,9 +27,9 @@ img {
 .container-welcome {
   width: 1200px;
   height: 508px;
-  background-color: #ffffff;
+  background-color: #231f20;
   background-image: url("../img/background-photo.jpg");
-  background-position: 1px -55px;
+  background-position: 0 -55px;
   background-repeat: no-repeat;
 
 }
@@ -168,7 +168,7 @@ a {
 }
 
 .search {
-  background-color: #fdfdfd;
+  background-color: #000000;
   background-image: url("../img/filter-background.jpg");
   background-position: 0 -56px;
   background-repeat: no-repeat;
@@ -510,11 +510,14 @@ a {
   background-color: #5496bd;
 }
 
-.hashtag a {
+.hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding-left: 15px;
+  padding-bottom: 3px;
 }
 
 .copyright {
@@ -746,16 +749,11 @@ a {
           justify-content: space-between;
   width: 150px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   list-style: none;
   padding-left: 37px;
 }
 
-.hashtag {
-  margin: 0;
-  padding-left: 15px;
-  padding-bottom: 3px;
-}
 
 .footer-copyright {
   display: -webkit-box;
@@ -767,8 +765,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  padding-top: 5px;
-  padding-left: 7px;
+  padding-top: 3px;
+  padding-left: 9px;
 }
 
 .found-hotels-list {
