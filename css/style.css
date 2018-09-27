@@ -27,7 +27,7 @@ img {
 .container-welcome {
   width: 1200px;
   height: 508px;
-  background-color: #231f20;
+  background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
   background-position: 0 -55px;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ a {
 }
 
 .search {
-  background-color: #000000;
+  background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
   background-position: 0 -56px;
   background-repeat: no-repeat;
@@ -281,31 +281,28 @@ a {
   line-height: 21px;
   font-weight: 700;
   padding: 0 92px;
-  margin-top: 22px;
-}
-
-
-.features-cell p {
-  margin-top: 23px;
+  margin-top: 20px;
 }
 
 .features-cell h3 {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 }
 
 .features-cell .features-cell-1 {
-  margin-top: -5px;
+  margin-top: -4px;
+  margin-bottom: 25px;
   padding: 0 92px;
 }
 
 .features-cell .features-cell-2 {
-  margin-top: -7px;
+  margin-top: -5px;
   padding: 0 77px;
 }
 
 .features-cell-p {
   padding: 0 55px;
+  margin-top: 21px;
 }
 
 .features-block-first-p {
@@ -319,20 +316,21 @@ a {
 .features-block-second-p {
   padding: 0 25px;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 31px;
+  margin-top: 22px;
+  margin-bottom: 32px;
 }
 
 .features-block-second-p1 {
   margin: 0;
-  margin-left: 3px;
-  margin-right: 1px;
-  margin-top: 24px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 22px;
   padding: 0 25px;
 }
 
 .features-cell-p-second {
   padding: 0 45px;
+  margin-top: 22px;
 }
 
 .search-hotel {
@@ -341,7 +339,7 @@ a {
 }
 
 .search-hotel-p {
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   margin-top: 42px;
 }
 
@@ -349,7 +347,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-top: 52px;
+  margin-top: 51px;
   margin-bottom: -18px;
 }
 
@@ -362,6 +360,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   display: inline-block;
+  vertical-align: middle;
   padding: 32px 140px;
   color: #ffffff;
   background-color: #766357;
@@ -414,6 +413,9 @@ a {
   fill: #81b3d2;
 }
 
+.map {
+  height: 590px;
+}
 
 .minus {
   width: 38px;
@@ -485,6 +487,7 @@ a {
 
 .button-main {
   display: inline-block;
+  vertical-align: middle;
   width: 458px;
   padding: 16px 0;
   margin: 0;
@@ -509,6 +512,7 @@ a {
 .hashtag {
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -618,7 +622,7 @@ a {
 
 .features-cell {
   padding: 0;
-  padding-top: 54px;
+  padding-top: 59px;
   padding-bottom: 20px;
   width: 400px;
   color: #ffffff;
@@ -628,7 +632,7 @@ a {
 
 .features-img {
   width: 800px;
-  height: 256px;
+  height: 255px;
   overflow: hidden;
 }
 
@@ -640,7 +644,7 @@ a {
   position: relative;
   padding: 0;
   padding-top: 141px;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
   width: 400px;
   background-color: #ffffff;
 }
@@ -658,9 +662,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 27px 0;
-  padding-left: 44px;
-  padding-right: 43px;
+  padding: 25px 0;
+  padding-left: 42px;
+  padding-right: 42px;
   color: #000000;
 
   background-color: #eeeeee;
@@ -669,7 +673,7 @@ a {
 .features-block-second-span {
   margin: 0;
   margin-right: 2px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .search-hotel {
@@ -699,7 +703,7 @@ a {
 .main-footer {
   position: relative;
   padding: 35px 0;
-  margin-top: -122px;
+  margin-top: -115px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -833,6 +837,7 @@ a {
 
 .hotel-type {
   display: inline-block;
+  vertical-align: middle;
   min-width: 111px;
 }
 
